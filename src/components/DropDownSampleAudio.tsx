@@ -40,7 +40,7 @@ export default function DropDownSampleAudio({
                 {isOpen && (
                     <div className="flex justify-between items-center p-3 border-t border-gray-200">
                         <audio controls loop className="w-[75%]">
-                            <source src={url} type="audio/wav" />
+                            <source src={URL.createObjectURL(file!)} type="audio/wav" />
                         </audio>
                         <button 
                             onClick={() => handleUseAudio(file!)}
