@@ -1,3 +1,6 @@
+# ========================
+# Node / JavaScript
+# ========================
 # Logs
 logs
 *.log
@@ -7,12 +10,15 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies / build
 node_modules
 dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# ========================
+# IDE / Editor
+# ========================
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -22,3 +28,39 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# ========================
+# Python / Flask backend
+# ========================
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Flask / general Python
+instance/
+*.sqlite3
+*.db
+*.log
+
+# Coverage / testing
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Others
+*.egg-info/
+dist/
+build/
